@@ -1,0 +1,15 @@
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+.show-all {
+  cursor: pointer;
+  text-align: right;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

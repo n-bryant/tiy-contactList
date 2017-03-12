@@ -1,0 +1,55 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    li {
+        background: #efefef;
+        border: 1px solid #999;
+        border-bottom: 1px solid #333;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: #999;
+        cursor: pointer;
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        position: relative;
+        top: 1px;
+        transition: background 0.5s ease;
+
+        &:hover {
+            background: lighten(#efefef, 2%);
+        }
+
+        &.is-active {
+            background: #fff;
+            border-bottom: 0;
+            border-color: #333;
+            color: #900;
+            cursor: default;
+        }
+    }
+}
+
+input,
+label {
+    display: block;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    &[type=submit] {
+        background: #900;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        padding: 1rem;
+
+        &:hover {
+            background: lighten(#900, 5%);
+        }
+    }
+}

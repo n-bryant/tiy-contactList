@@ -1,0 +1,17 @@
+body {
+    font-family: $secondaryFont;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background: url("../images/footer_lodyas.png") #000;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+}

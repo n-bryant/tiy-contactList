@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JavaScript - Contact List</title>
+        <link href="https://fonts.googleapis.com/css?family=Arsenal|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="styles/app.css">
+    </head>
+    <body>
+        <header>
+            <h1>Contact List</h1>
+        </header>
+        <main>
+            <nav>
+                <ul class="main-nav">
+                    <li class="is-active">Add Contact</li> <!-- is-active used to show what is visible -->
+                    <li>Search Contacts</li>
+                </ul>
+            </nav>
+            <section class="add-container is-active">
+                <form class="add-form" autocomplete="off">
+                    <label for="add-name">Contact Name</label>
+                    <input type="text" name="name" id="add-name" placeholder="Contact Name" required>
+
+                    <fieldset>
+                        <label for="add-cell">Cell Phone</label>
+                        <input type="tel" name="cell" id="add-cell" placeholder="123-123-1234">
+                        <label for="add-home">Home Phone</label>
+                        <input type="tel" name="home" id="add-home" placeholder="123-123-1234">
+                        <label for="add-work">Work Phone</label>
+                        <input type="tel" name="work" id="add-work" placeholder="123-123-1234">
+                    </fieldset>
+                    <input type="submit" name="submit-button" value="Add Contact">
+                </form>
+            </section>
+            <section class="search-container">
+                <form class="search-form" autocomplete="off">
+                    <label for="search-name">Search by Name:</label>
+                    <input type="text" id="search-name" placeholder="Contact Name">
+                    <input type="submit" value="Add Contact">
+                </form>
+                <p class="show-all">Show All</p>
+                <section class="results-container"></section> <!-- Where we print our results -->
+            </section>
+        </main>
+        <footer>
+            <span>Total Contacts: <span class="total-contacts"></span></span><!-- total-contacts updated when we add a new contact -->
+        </footer>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

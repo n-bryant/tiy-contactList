@@ -1,0 +1,13 @@
+.add-container,
+.search-container {
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: none;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 75%;
+
+    &.is-active {
+        display: block;
+    }
+}
